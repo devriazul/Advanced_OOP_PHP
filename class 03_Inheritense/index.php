@@ -4,31 +4,27 @@ class teacher{
         public $name;
         public $salary;
 
-        // function __construct($n = "no name",$s = 0){
-        //     $this->name = $n;
-        //     $this->salary = $s;
-        // }
-        function __construct(){
-            echo "Teacher info";
+        function __construct($n,$s){
+            $this->name = $n;
+            $this->salary = $s;
         }
-
         function info(){
+            echo "Teacher".'<br>';
             echo $this->name . " = " .$this->salary."<br>";
         }
 }
         class headmaster extends teacher{
-            function __construct(){
-            echo "Headmaster info";
-    }
+            public $extra = 10000 + $this->salary;
 
+            function info(){
+                echo "Headmaster".'<br>';
+                echo $this->name . " = " . $extra ."<br>";
+            }
 }
+    $t = new teacher("Riaz",20000);
+    $h = new headmaster("Nahian",20000);
 
-
-
-    $person = new teacher();
-    // $person ->salary =30000;
-    // $person ->name = "Riazul Islam";
-
-    // $person -> info();
+    $t ->info();
+    $h -> info();
 
 ?>
