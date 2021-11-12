@@ -1,23 +1,34 @@
 <?php
 
-class employee{
+class teacher{
         public $name;
         public $salary;
 
-        function __construct($n = "no name",$s = 0){
-            $this->name = $n;
-            $this->salary = $s;
+        // function __construct($n = "no name",$s = 0){
+        //     $this->name = $n;
+        //     $this->salary = $s;
+        // }
+        function __construct(){
+            echo "Teacher info";
         }
 
         function info(){
             echo $this->name . " = " .$this->salary."<br>";
         }
+}
+        class headmaster extends teacher{
+            function __construct(){
+            echo "Headmaster info";
     }
-    $person = new employee("Riazul Islam", 30000);
-    $person2 = new employee();
+
+}
+
+
+
+    $person = new teacher();
     // $person ->salary =30000;
     // $person ->name = "Riazul Islam";
 
-    $person -> info();
-    $person2 -> info();
+    // $person -> info();
+
 ?>
