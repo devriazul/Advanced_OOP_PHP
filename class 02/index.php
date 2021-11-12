@@ -1,16 +1,17 @@
 <?php
 
-    class employee{
+use employee as GlobalEmployee;
+
+class employee{
         public $name, $salary;
 
         function info(){
-            echo $this ->name . " = " . $this->salary ."<br>";
+            echo $this->name . " = " .$this->salary."<br>";
         }
     }
-   $person = new employee();
-   $person -> name = "Riazul Islam";
-   $person -> salary = "30000";
+    $person = new employee();
+    $person ->salary =30000;
+    $person ->name = "Riazul Islam";
 
-   $person -> info();
-
+    $person -> info();
 ?>
