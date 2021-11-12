@@ -25,6 +25,7 @@
     $pulsar -> a =50;
     $pulsar -> b =40;
 
-    echo "Sum for Pulsar: ". $pulsar ->sub();
+    echo "Sub for Pulsar: ". $pulsar ->sub();
+   
 
 ?>
