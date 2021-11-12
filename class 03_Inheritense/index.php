@@ -28,4 +28,6 @@ class teacher{
     $t ->info();
     $h -> info();
 
+    //everything is up to date
+
 ?>
