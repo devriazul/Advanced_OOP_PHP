@@ -1,7 +1,7 @@
 <?php
 
 class teacher{
-        public $name;
+        protected $name;
 
         function __construct($n){
             $this->name = $n;
@@ -21,7 +21,7 @@ class teacher{
 //             }
 // }
     $t = new teacher("Riaz",20000);
-    $t ->name = "Abdullah noman";
+    // $t ->name = "Abdullah noman";
     $t ->info();
 
 
