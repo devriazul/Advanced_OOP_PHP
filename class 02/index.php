@@ -3,7 +3,8 @@
 use employee as GlobalEmployee;
 
 class employee{
-        public $name, $salary;
+        public $name = "no name";
+        public $salary = 0;
 
         function info(){
             echo $this->name . " = " .$this->salary."<br>";
