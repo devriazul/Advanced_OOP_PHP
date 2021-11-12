@@ -14,8 +14,10 @@ class employee{
         }
     }
     $person = new employee("Riazul Islam", 30000);
+    $person2 = new employee();
     // $person ->salary =30000;
     // $person ->name = "Riazul Islam";
 
     $person -> info();
+    $person2 -> info();
 ?>
